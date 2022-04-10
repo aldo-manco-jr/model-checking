@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/bit_enable_disable.dir/main.c.o -o bit_enable_disable 

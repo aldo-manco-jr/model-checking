@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/lazy_cseq.dir/main.c.o -o lazy_cseq 
