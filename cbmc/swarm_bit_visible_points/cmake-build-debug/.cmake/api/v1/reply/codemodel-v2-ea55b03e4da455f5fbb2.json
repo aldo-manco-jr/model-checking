@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "swarm_bit_visible_points",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "swarm_bit_visible_points::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-swarm_bit_visible_points-Debug-3d627c5dbce6851c317a.json",
+					"name" : "swarm_bit_visible_points",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/aldo/Desktop/program_analysis/project/model-checking/cbmc/swarm_bit_visible_points/cmake-build-debug",
+		"source" : "/home/aldo/Desktop/program_analysis/project/model-checking/cbmc/swarm_bit_visible_points"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

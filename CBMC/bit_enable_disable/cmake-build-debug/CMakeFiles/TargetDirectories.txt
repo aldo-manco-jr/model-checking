@@ -1,3 +1,0 @@
-/home/aldo/Desktop/algorithms/cbmc/bit_enable_disable/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/aldo/Desktop/algorithms/cbmc/bit_enable_disable/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/aldo/Desktop/algorithms/cbmc/bit_enable_disable/cmake-build-debug/CMakeFiles/bit_enable_disable.dir
