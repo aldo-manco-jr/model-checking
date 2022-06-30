@@ -1,0 +1,30 @@
+
+Hi Peter,
+
+I've just checked the new version of CBMC with Shadow Memory with the new options:
+		--nondet-static-matching 'regex'
+		--show-dimacs-var 'symbol'
+
+It's close to what we need, but for our project we need other 2 changes:
+
+	1° change:
+
+		the output of the option (--show-dimacs-var 'symbol') which is the list of dimacs variables associated with global variables non-deterministically assigned
+				should be placed inside (file.out) if the option (--outfile file.out) is used in the command
+
+		if option (--dimacs) is present then it can continue to work as it does now
+
+	2° change (once the 1° change has been done):
+
+		if the file (file.out) created by the option (--outfile file.out) contains the output of the option (--show-dimacs-var 'symbol') 
+		then this file should be created before CBMC uses the SAT solver methods to check the satisfiability of the formula, when CBMC calls the following minisat methods:
+
+				solver->solve(const vec<Lit> assumps)
+						is called in "/cbmc/src/solvers/sat/satcheck_minisat.cpp"
+				solver->solveLimited(const vec<Lit> assumps) 
+						is called in "/cbmc/src/solvers/sat/satcheck_minisat2.cpp"
+		
+		such that we can open this file (file.out) in our own version of minisat where we had overridden (solve, solveLimited) methods in (Solver.h)
+		
+Thanks a lot for helping us,
+Aldo Manco

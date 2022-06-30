@@ -1,0 +1,17 @@
+new option added by Peter in the last cbmc version with shadow memory:
+
+initialize non-deterministically global static variables:
+--nondet-static-matching (regex)
+regex = specifies which static global variables must be initialized with a non-deterministic value
+
+to get variable's number of SAT formula which are bounded with global variables:
+cbmc main.c --dimacs --outfile dimacs.out --show-dimacs-var (symbol)
+symbol = specifies which static global variables must be shown into the terminal as last line
+
+default values:
+(regex) = '.*_nondet_.*'
+(symbol) = '__cseq_distinguished_global'
+
+example usage:
+
+cbmc main.c --dimacs --nondet-static-matching '.*_nondet_.*' --outfile dimacs.out --show-dimacs-var '__cseq_distinguished_global'

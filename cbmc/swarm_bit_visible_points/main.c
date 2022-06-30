@@ -106,7 +106,7 @@ int __cs_create(__cs_t *__cs_new_thread_id, void *__cs_attr, void *(*__cs_thread
 }
 int __cs_join(__cs_t __cs_id, void **__cs_value_ptr)
 {
-    __CPROVER_assume(__cs_pc[__cs_id] == __cs_thread_lines[__cs_id] && _a__cseq_distinguished_global_nondet_2 && _a__cseq_distinguished_global_nondet_3 && _a__cseq_distinguished_global_nondet_4 && _a__cseq_distinguished_global_nondet_5 && _a__cseq_distinguished_global_nondet_6 && _a__cseq_distinguished_global_nondet_7);
+    __CPROVER_assume(__cs_pc[__cs_id] == __cs_thread_lines[__cs_id] && _a__cseq_distinguished_global_nondet_3 && _a__cseq_distinguished_global_nondet_2 && _a__cseq_distinguished_global_nondet_4 && _a__cseq_distinguished_global_nondet_5 && _a__cseq_distinguished_global_nondet_6 && _a__cseq_distinguished_global_nondet_7);
     *__cs_value_ptr = __cs_thread_joinargs[__cs_id];
     return 0;
 }
