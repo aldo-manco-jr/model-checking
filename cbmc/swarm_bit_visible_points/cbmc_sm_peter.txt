@@ -14,4 +14,4 @@ default values:
 
 example usage:
 
-cbmc main.c --dimacs --nondet-static-matching '.*_nondet_.*' --outfile dimacs.out --show-dimacs-var '__cseq_distinguished_global'
+./cbmc main.c --dimacs --nondet-static-matching '.*_nondet_.*' --outfile dimacs.out --show-dimacs-var '__cseq_distinguished_global'

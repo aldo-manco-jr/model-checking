@@ -42,7 +42,17 @@
 #include <stdio.h>
 
 __CPROVER_bitvector[1] nonDeterministicNumber();
-
+                                        unsigned __CPROVER_bitvector[3] nondet0();
+                                        unsigned __CPROVER_bitvector[3] nondet1();
+                                        unsigned __CPROVER_bitvector[2] nondet2();
+                                        unsigned __CPROVER_bitvector[3] _cs_SwCtrl_0_0 = (unsigned __CPROVER_bitvector[3])(nondet0());
+                                        unsigned __CPROVER_bitvector[3] _cs_SwCtrl_0_1 = (unsigned  __CPROVER_bitvector[3])(nondet0());
+                                        unsigned __CPROVER_bitvector[3] _cs_SwCtrl_1_0 = (unsigned  __CPROVER_bitvector[3])(nondet1());
+                                        unsigned __CPROVER_bitvector[3] _cs_SwCtrl_1_1 = (unsigned  __CPROVER_bitvector[3])(nondet1());
+                                        unsigned __CPROVER_bitvector[2] _cs_SwCtrl_2_0 = (unsigned  __CPROVER_bitvector[2])(nondet2());
+                                        unsigned __CPROVER_bitvector[2] _cs_SwCtrl_2_1 = (unsigned  __CPROVER_bitvector[2])(nondet2());
+                                        unsigned __CPROVER_bitvector[2] _cs_SwCtrl_2_2 = (unsigned  __CPROVER_bitvector[2])(nondet2());
+                                        unsigned __CPROVER_bitvector[2] _cs_SwCtrl_2_3 = (unsigned  __CPROVER_bitvector[2])(nondet2());
 __CPROVER_bitvector[2] _a__cseq_distinguished_global_nondet_1;
 static __CPROVER_bitvector[3] _a__cseq_distinguished_global_nondet_2;
 static __CPROVER_bitvector[1] _a__cseq_distinguished_global_nondet_3;
